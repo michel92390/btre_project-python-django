@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+     <!-- Font Awesome -->
+  <link rel="stylesheet" href="{% static 'css/all.css' %}">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+  <!-- Custom -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <!-- LightBox -->
+  <link rel="stylesheet" href="{% static 'css/lightbox.min.css' %}">
+
+
+<title>BT Real Estate {% block title %} {% endblock %}</title>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    {% include 'partials/_topbar.html' %}
+     <!-- Nav Bar -->
+    {% include 'partials/_navbar.html' %}
+    <!-- Main Content -->
+    {% block content %} {% endblock %}
+      <!-- Footer -->
+    {% include 'partials/_footer.html' %}
+   
+
+
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/lightbox.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+
+</body>
+</html>
+
+{% comment %} admin / password123 / bilal92390@gmail.com {% endcomment %}
